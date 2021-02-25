@@ -1,0 +1,52 @@
+.MuiAppBar-root {
+    flex-direction: row !important;
+}
+.MuiTabs-root {
+    margin-left: 20%;
+}
+.MuiTab-wrapper {
+    text-align: left;
+    font: normal normal 600 15px/24px ProximaNova;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.Mui-selected .MuiTab-wrapper {
+    color: #2BC5B4;
+    color: var(--unnamed-color-2bc5b4);
+}
+.logo {
+    width: 125px;
+    height: 40px;
+    background: transparent url('../../assets/logo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+    left: 34px;
+    top: 25px;
+}
+.header-right {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.notify {
+    width: 76px;
+    height: 100%;
+    border-color: #C1CFD933;
+}
+.notify-icon {
+    width: 16px;
+    height: 18px;
+    background: transparent url('../../assets/bell.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.alert {
+    color: #646D82;
+    margin-top: 33px;
+}
+.user {
+    width: 76px;
+    height: 100%;
+}
