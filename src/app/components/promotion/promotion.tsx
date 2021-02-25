@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default class Menu extends React.Component {
+export default class Promotion extends React.Component {
     render() {
         return (
             <div>
-                Menu Component
+                Promotion Component
             </div>
         )
     }

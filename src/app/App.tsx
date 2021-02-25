@@ -32,9 +32,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Switch>
-          <Route exact path='/' component={TabContainer} />
-        </Switch>
+        <TabContainer />
       </div>
     </Provider>
   );

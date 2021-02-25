@@ -1,0 +1,80 @@
+.cashback-title {
+    margin-top:76px;
+    text-align: center;
+    font: normal normal 600 22px/24px Proxima Nova;
+    letter-spacing: 1.1px;
+    color: #2BC5B4;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.cashback-subtitle {
+    text-align: center;
+    font: normal normal normal 14px/24px Proxima Nova;
+    letter-spacing: 1.4px;
+    color: #646D82;
+    opacity: 1;
+}
+
+.offer-container {
+    margin-top: 72px;
+    width: 492px;
+    height: 441px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+.cashback-logo {
+    margin-top: 65px;
+    width: 217px;
+    height: 155px;
+    background: transparent url('../../assets/no_cb.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 10%;
+}
+
+.offer-text {
+    margin-top: 10%;
+    width: 228px;
+    height: 20px;
+    text-align: center;
+    font: normal normal normal 16px/24px Proxima Nova;
+    letter-spacing: 0px;
+    color: #424B54;
+    opacity: 1;
+    font-size: 16px;
+}
+
+.create-button {
+    width: 185px;
+    height: 50px;
+    background: #2BC5B4 0% 0% no-repeat padding-box;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    opacity: 1;
+    cursor: pointer;
+    text-align: center;
+    font: normal normal normal 18px/25px Avenir;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 10%;
+}
+
+.create-offer {
+    height: 768px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 20px #C1CFD924;
+    border-radius: 12px;
+    opacity: 1;
+    margin-top:72px;
+}
+
+.offer-preview {
+    height: 287px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    margin-top:72px;
+}

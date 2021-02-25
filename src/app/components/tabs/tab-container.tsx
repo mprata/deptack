@@ -1,10 +1,16 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
+import { Switch, Route, useHistory, Redirect } from 'react-router-dom';
+import { withRouter, RouteComponentProps } from "react-router";
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Paper from '@material-ui/core/Paper';
 import Dashboard from '../dashboard/dashboard';
-import { TabPanel } from './tab-panel';
+import { Cashback } from '../cashback/cashback';
+import CashbackOffer from '../cashback/cashback-offer';
+import Menu from '../menu/menu';
+import Customers from '../customers/customers';
+import Promotion from '../promotion/promotion';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -18,7 +24,8 @@ export interface TabContainerState {
     tabSelectedIndex: number;
 }
 
-export default class TabContainer extends React.Component<TabContainerProps, TabContainerState> {
+class TabContainer extends React.Component<TabContainerProps & RouteComponentProps<{}>, TabContainerState> {
+
     constructor(props: any) {
         super(props);
         this.state = ({
@@ -57,7 +64,12 @@ export default class TabContainer extends React.Component<TabContainerProps, Tab
         })
     };
 
+    handleCallToRouter = (event: any, value: any) => {
+        this.props.history.push(value);
+    }
+
     render() {
+        let currentPath = this.props.history.location.pathname.split('-')[0];
         return (
             <ThemeProvider theme={this.theme}>
                 <div>
@@ -65,17 +77,17 @@ export default class TabContainer extends React.Component<TabContainerProps, Tab
                         <div className='logo'></div>
                         <Tabs
                             className='app-tabs'
-                            value={this.state.tabSelectedIndex}
-                            onChange={this.handleChange}
                             aria-label="paytack tabs"
                             indicatorColor="secondary"
                             textColor="secondary"
+                            value={currentPath}
+                            onChange={this.handleCallToRouter}
                         >
-                            <Tab label="Dashboard" {...this.a11yProps(0)} />
-                            <Tab label="Cashback" {...this.a11yProps(1)} />
-                            <Tab label="Menu" {...this.a11yProps(2)} />
-                            <Tab label="Customers" {...this.a11yProps(3)} />
-                            <Tab label="Promotion" {...this.a11yProps(4)} />
+                            <Tab label="Dashboard" value='/dashboard'/>
+                            <Tab label="Cashback" value='/cashback'/>
+                            <Tab label="Menu" value='/menu'/>
+                            <Tab label="Customers" value='/customers'/>
+                            <Tab label="Promotion" value='/promotion'/>
                         </Tabs>
                         <div className='header-right'>
                             <Paper variant="outlined" className='notify'>
@@ -86,23 +98,21 @@ export default class TabContainer extends React.Component<TabContainerProps, Tab
                             </Paper>
                         </div>
                     </AppBar>
-                    <TabPanel value={this.state.tabSelectedIndex} index={0}>
-                        <Dashboard />
-                    </TabPanel>
-                    <TabPanel value={this.state.tabSelectedIndex} index={1}>
-                        Cashback
-                    </TabPanel>
-                    <TabPanel value={this.state.tabSelectedIndex} index={2}>
-                        Menu
-                    </TabPanel>
-                    <TabPanel value={this.state.tabSelectedIndex} index={3}>
-                        Customers
-                    </TabPanel>
-                    <TabPanel value={this.state.tabSelectedIndex} index={4}>
-                        Promotion
-                    </TabPanel>
+                    <Switch>
+                        <Route exact path='/'>
+                            <Redirect to='/dashboard' />
+                        </Route>
+                        <Route path='/dashboard' component={Dashboard} />
+                        <Route path='/cashback' component={Cashback} />
+                        <Route path='/menu' component={Menu} />
+                        <Route path='/customers' component={Customers} />
+                        <Route path='/promotion' component={Promotion} />
+                        <Route path='/cashback-offer' component={CashbackOffer} />
+                    </Switch>
                 </div>
             </ThemeProvider>
         )
     }
 }
+
+export default withRouter(TabContainer);

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default class Menu extends React.Component {
+export default class Customers extends React.Component {
     render() {
         return (
             <div>
-                Menu Component
+                Customers Component
             </div>
         )
     }
