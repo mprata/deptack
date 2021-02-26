@@ -1,6 +1,9 @@
 import React from 'react'
 import {style} from './style'
 import CreateMenu from './createMenu'
+import AddMenuItem from './addMenuItem'
+import { Switch, Route, useHistory, Redirect } from 'react-router-dom';
+import { withRouter, RouteComponentProps } from "react-router";
 
 const Menu=()=>{
     return(
@@ -10,4 +13,4 @@ const Menu=()=>{
         </div>
     )
 }
-export default Menu
+export default withRouter(Menu)

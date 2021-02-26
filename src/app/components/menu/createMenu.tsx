@@ -2,6 +2,7 @@ import React from 'react'
 import { style } from './style'
 import imgPlaceholder from "../../../assets/img_placeholder.svg"
 import createMenuImg from '../../../assets/createMenu.png'
+import { useHistory } from 'react-router-dom'
 import {
     Grid,
     Image,
@@ -10,6 +11,10 @@ import {
 
 } from "semantic-ui-react";
 const CreateMenu = () => {
+    const history = useHistory();
+    const handleCreate = () => {
+        history.push('/menu-additem');
+    }
     return (
         <Grid style={style.createMenuDiv}>
             <Grid>
@@ -49,7 +54,7 @@ const CreateMenu = () => {
                     justifyContent: 'center',
                 }}>
                    
-                    <Button style={style.createMenuButton}>Create Menu</Button>
+                    <Button style={style.createMenuButton} onClick={handleCreate}>Create Menu</Button>
                 </Grid.Row>
 
             </Grid>

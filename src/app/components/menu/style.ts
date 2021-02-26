@@ -25,7 +25,8 @@ export const style: StylesDictionary = {
        display:'flex',
         alignItems:'center',
         justifyContent: 'center',
-        marginLeft:'32%'
+        marginLeft:'32%',
+        marginTop:"10px"
     },
     createMenuImg:{
         width: '217.1px',
@@ -43,6 +44,30 @@ export const style: StylesDictionary = {
         opacity: 1,
         color: "white",
        
+    },
+    checkBoxStyle: {
+        marginLeft: "-30px",
+        marginTop: "10px"
+    },
+    addMenuDiv: {
+        background: '#FFFFFF 0% 0% no-repeat padding-box',
+       marginRight:'32%',
+       display:'flex',
+       alignItems:'center',
+       justifyContent: 'center',
+        marginLeft:'32%',
+        marginTop:"10px"
+    },
+    publishButton: {
+        background: "#2BC5B4 0% 0% no-repeat padding-box",
+        border: "1px solid #DDDDDD",
+        borderRadius: "4px",
+        opacity: 1,
+        color: "white",
+        width: '150px',
+        height: '40px',
+        marginLeft:'50%',
+        marginTop: '200px'
     },
 
 };

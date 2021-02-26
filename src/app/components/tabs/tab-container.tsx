@@ -14,6 +14,7 @@ import Promotion from '../promotion/promotion';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import AddMenuItem from '../menu/addMenuItem'
 import './tab-container.css';
 
 export interface TabContainerProps {
@@ -108,6 +109,7 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                         <Route path='/customers' component={Customers} />
                         <Route path='/promotion' component={Promotion} />
                         <Route path='/cashback-offer' component={CashbackOffer} />
+                        <Route path='/menu-additem' component={AddMenuItem} />
                     </Switch>
                 </div>
             </ThemeProvider>
