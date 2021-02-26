@@ -78,3 +78,192 @@
     opacity: 1;
     margin-top:72px;
 }
+
+.offer-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form-header {
+    box-sizing: border-box;
+    padding: 16px;
+    height: 16px;
+    text-align: left;
+    font: normal normal bold 13px/22px Proxima Nova;
+    letter-spacing: 1.3px;
+    color: #646D82;
+    text-transform: uppercase;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.primary-field {
+    width: 62%;
+}
+
+.helper-field {
+    width: 10%;
+}
+
+.secondary-field {
+    margin-left: 2% !important;
+}
+
+.full-field {
+    width: 72%;
+}
+
+.half-field {
+    width: 35%;
+    padding: 5px;
+}
+.MuiInputBase-input {
+    font: normal normal normal 15px/24px Proxima Nova !important;
+    letter-spacing: 0px;
+    color: #646D82 !important;
+    opacity: 1;
+}
+.MuiFormLabel-root {
+    font: normal normal normal 15px/24px Proxima Nova !important;
+    letter-spacing: 0px;
+    color: #646D82 !important;
+    opacity: 1;
+}
+.MuiInput-underline:before {
+    border-bottom: 2px solid #E9E9F0 !important;
+}
+.MuiInput-underline:after {
+    border-bottom: 2px solid #E9E9F0 !important;
+}
+.MuiInputLabel-root.Mui-focused {
+    color: rgba(0, 0, 0, 0.54) !important;
+}
+.img-container {
+    align-items: flex-start;
+}
+.img-ctrl-container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.img-ctrl {
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.img-text {
+    text-align: left;
+    font: normal normal 600 15px/22px Proxima Nova;
+    letter-spacing: 0px;
+    color: #424B54;
+    opacity: 1;
+    margin-top: -22px;
+    cursor: pointer;
+}
+.img-preview {
+    width: 35%;
+    height: 90px;
+    border-radius: 12px;
+    opacity: 1;
+    border: solid 1px #424B54;
+}
+.img-preview-container {
+    width: 234px;
+    height: 90px;
+    border-radius: 12px;
+    opacity: 1;
+    border: solid 1px #424B54;
+    margin: 16px;
+    box-sizing: border-box;
+    height: 174px;
+}
+img[src=""] { 
+    opacity: 0;
+}
+.img-upload {
+    width: 211px;
+    height: 90px;
+    border-radius: 12px;
+    opacity: 1;
+    border: solid 1px #424B54;
+}
+.checkbox-container {
+    width: 72%;
+}
+.deals-label {
+    text-align: left;
+    font: normal normal 600 15px/24px Proxima Nova;
+    letter-spacing: 0px;
+    color: #424B54 !important;
+    opacity: 1;
+    font-weight: bold !important;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.button-inner {
+    display: flex;
+    flex-direction: row;
+    width: 72%;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-text {
+    width: 72%;
+    text-align: left;
+    font: normal normal 600 15px/24px Proxima Nova;
+    letter-spacing: 0px;
+    color: #424B54;
+    opacity: 1;
+    font-weight: bold;
+}
+.exclude-button {
+    background: #22CE8B00 0% 0% no-repeat padding-box !important;
+    border: 1px solid #2BC5B4 !important;
+    border-radius: 22px !important;
+    opacity: 1;
+    width: 50%;
+    text-align: center;
+    font: normal normal normal 12px/13px Proxima Nova;
+    letter-spacing: 0.6px;
+    color: #646D82;
+    opacity: 1;
+}
+.publish-button {
+    width: 185px;
+    height: 50px;
+    background: #2BC5B4 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 18px/25px Avenir;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+}

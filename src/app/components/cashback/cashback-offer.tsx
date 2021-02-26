@@ -1,12 +1,31 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import { OfferForm } from './offer-form';
+import { OfferPreview } from './offer-preview';
 
 import './cashback.css';
 
-export default class CashbackOffer extends React.Component {
+export interface CashbackOfferProps {
+    children?: any;
+}
+
+export interface CashbackOfferState {
+    imgSrc: any
+}
+
+export default class CashbackOffer extends React.Component<CashbackOfferProps, CashbackOfferState> {
 
     constructor(props: any) {
         super(props)
+        this.state = {
+            imgSrc: ''
+        };
+    }
+
+    updateImgSrc = (src: any) => {
+        this.setState({
+            imgSrc: src
+        });
     }
 
     render() {
@@ -22,18 +41,19 @@ export default class CashbackOffer extends React.Component {
                 <Grid
                     container
                     direction="row"
-                    justify="space-between"
+                    justify="center"
                     alignItems="flex-start"
                     xs={9}
+                    spacing={5}
                 >
                     <Grid key='create-offer' item xs={6}>
                         <div className='create-offer'>
-
+                            <OfferForm onImgUpload={this.updateImgSrc}/>
                         </div>
                     </Grid>
-                    <Grid key='offer-preview' item xs={5}>
+                    <Grid key='offer-preview' item xs={4}>
                         <div className='offer-preview'>
-
+                            <OfferPreview imgSrc={this.state.imgSrc}/>
                         </div>
                     </Grid>
                 </Grid>
