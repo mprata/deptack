@@ -103,7 +103,7 @@ export const style: StylesDictionary = {
     signInText: {
 
         textAlign: 'center',
-        font: "normal normal normal 15px/24px Proxima Nova",
+        font: "normal normal normal 15px/24px ProximaNova",
         letterSpacing: "0px",
         color: "black",
         marginTop: '20px'

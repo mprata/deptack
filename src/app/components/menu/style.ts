@@ -9,14 +9,14 @@ export const style: StylesDictionary = {
         marginTop: '56px',
         textAlign: 'center',
         marginBottom: '0px',
-        font: 'normal normal 600 22px/24px Proxima Nova',
+        font: 'normal normal 600 22px/24px ProximaNova',
         letterSpacing: '1.1px',
         color: '#2BC5B4',
     },
     orderOnline: {
         marginTop: '0px',
         color: '#646D82',
-        font: 'normal normal normal 14px/24px Proxima Nova',
+        font: 'normal normal normal 14px/24px ProximaNova',
         letterSpacing: '1.4px'
     },
     createMenuDiv: {
