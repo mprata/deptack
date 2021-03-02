@@ -37,27 +37,33 @@ const ResetPinPage = () => {
                         
                     </Grid.Column>
                     <Grid.Column>
-                        <Image src={payteckLogo} style={style.bankDetailPaytackLogo} />
-                        <p style={style.forgotPin}>Forgot PIN? Don't worry, we will help you recover your account</p>
+                        <Image src={payteckLogo} style={style.resetPinPaytackLogo} />
+                        <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                        <p style={style.resetPin}>We've sent a verification code on +45976786768,</p>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'center',alignItems:'center',
+                                font:'normal normal normal 16px/20px ProximaNova'}}>
+                        <p> Use that code to reset your PIN</p>
+                        </div>
                         <TextField
                             id="standard-basic"
                             label="Enter Varification Code"
-                            style={style.businessAddress}
+                            style={style.resetInput}
                         />
                          <TextField
                             id="standard-basic"
                             label="Enter 4 Digit PIN"
-                            style={style.businessAddress}
+                            style={style.resetInput}
                         />
                          <TextField
                             id="standard-basic"
                             label="Conform PIN"
-                            style={style.businessAddress}
+                            style={style.resetInput}
                         />
                         
 
                         <div>
-                            <Button style={style.signinButton} onClick={handleResetPin}>Reset PIN</Button>
+                            <Button style={style.sendOtpButton} onClick={handleResetPin}>Reset PIN</Button>
                            
                         </div>
                     </Grid.Column>

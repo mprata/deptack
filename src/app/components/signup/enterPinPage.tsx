@@ -37,20 +37,20 @@ const EnterPinPage = () => {
                     </Grid.Column>
                     <Grid.Column>
                         <Image src={payteckLogo} style={style.bankDetailPaytackLogo} />
-                        <p style={style.welcome}>All done! Secure your account with a PIN</p>
+                        <p style={style.allMostDone}>All done! Secure your account with a PIN</p>
                         <TextField
                             id="standard-basic"
                             label="Enter 4 digit PIN"
-                            style={style.businessAddress}
+                            style={style.mobileNumber}
                         />
                         <TextField
                             id="standard-basic"
                             label="Conform PIN"
-                            style={style.businessAddress}
+                            style={style.mobileNumber}
                         />
 
                         <div>
-                            <Button style={style.signinButton} onClick={handleSetPin}>Set PIN</Button>
+                            <Button style={style.sendOtpButton} onClick={handleSetPin}>Set PIN</Button>
                         </div>
                     </Grid.Column>
                 </Grid.Row>

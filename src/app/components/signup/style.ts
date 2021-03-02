@@ -18,25 +18,42 @@ export const style: StylesDictionary = {
     },
     payteckLogoPng: {
         marginTop: "40px",
-        marginLeft: "200px",
-        width: "100px",
-        height: "35px"
+        marginLeft: "180px",
+        width: "158px",
+        height: "50px"
     },
     bankDetailPaytackLogo:{
-        marginTop: "150px",
-        marginLeft: "200px",
-        width: "100px",
-        height: "40px"
+        marginTop: "120px",
+        marginLeft: "150px",
+        width: "158px",
+        height: "50px"
+    },
+    resetPinPaytackLogo:{
+        marginTop: "80px",
+        marginLeft: "180px",
+        width: "158px",
+        height: "50px"
     },
     welcome: {
         marginLeft: "150px",
         marginTop: "24px",
-        font:"normal normal normal 13px ProximaNova",
+        font:"normal normal normal 16px ProximaNova",
+        color:'#424B54'
+    },
+    allMostDone: {
+        marginLeft: "100px",
+        marginTop: "24px",
+        font:"normal normal normal 16px ProximaNova",
         color:'#424B54'
     },
     forgotPin: {
-        marginLeft: "70px",
-        marginTop: "24px"
+        marginLeft: "30px",
+        marginTop: "24px",
+        font:'normal normal normal 16px/20px ProximaNova'
+    },
+    resetPin: {
+        marginTop: "24px",
+        font:'normal normal normal 16px/20px ProximaNova'
     },
     inputBox: {
         width: "284px",
@@ -50,8 +67,7 @@ export const style: StylesDictionary = {
         background: "#2BC5B4 0% 0% no-repeat padding-box",
         border: "1px solid #DDDDDD",
         borderRadius: "4px",
-       fontWeight:'normal',
-       fontSize:'18px',
+        font:'normal normal normal 18px/25px Avenir',
         opacity: 1,
         color: "white",
         width: '185px',
@@ -59,7 +75,38 @@ export const style: StylesDictionary = {
         marginLeft: "180px",
         textAlign: 'center',
         marginTop: '20px',
-        letterSpacing: '1px'
+        letterSpacing: '1px',
+        paddingTop:'12px'
+    },
+    sendOtpButton: {
+        background: "#2BC5B4 0% 0% no-repeat padding-box",
+        border: "1px solid #DDDDDD",
+        borderRadius: "4px",
+        font:'normal normal normal 18px/25px Avenir',
+        opacity: 1,
+        color: "white",
+        width: '185px',
+        height: '50px',
+        marginLeft: "180px",
+        textAlign: 'center',
+        marginTop: '50px',
+        letterSpacing: '1px',
+        paddingTop:'12px'
+    },
+    verifyButton: {
+        background: "#2BC5B4 0% 0% no-repeat padding-box",
+        border: "1px solid #DDDDDD",
+        borderRadius: "4px",
+        font:'normal normal normal 18px/25px Avenir',
+        opacity: 1,
+        color: "white",
+        width: '185px',
+        height: '50px',
+        marginLeft: "150px",
+        textAlign: 'center',
+        marginTop: '50px',
+        letterSpacing: '1px',
+        paddingTop:'12px'
     },
     cancelButton: {
         background: "white",
@@ -78,7 +125,7 @@ export const style: StylesDictionary = {
          width: '100%',
           marginTop: '25%',
            marginBottom: '25%',
-           borderRight:'1px solid #646D82 '
+           borderRight:'1px solid gainsboro'
     },
 
     imgGrid: {
@@ -94,8 +141,18 @@ export const style: StylesDictionary = {
         marginLeft: "45px"
     },
     businessAddress: {
-        width: '430px',
+        width: '435px',
         marginLeft: '45px',
+        marginTop: '16px'
+    },
+    mobileNumber: {
+        width: '362px',
+        marginLeft: '80px',
+        marginTop: '16px'
+    },
+    resetInput: {
+        width: '362px',
+        marginLeft: '95px',
         marginTop: '16px'
     },
     inputWidth: {

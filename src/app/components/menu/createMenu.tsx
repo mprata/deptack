@@ -29,7 +29,7 @@ const CreateMenu = () => {
                     <Grid.Column  >
                         <div style={{ float: 'left', marginTop: "35px" }}>
                             <p style={{font:'normal normal bold 16px/19px ProximaNova'}}>Burger King</p>
-                            <p style={{font:' normal normal normal 13px/15px ProximaNova',
+                            <p style={{font:'normal normal normal 13px/15px ProximaNova',
                             marginTop:'-10px',color: '#CFCFCF',marginRight:'30px'}}>Sweden</p>
 
                         </div>
@@ -48,7 +48,7 @@ const CreateMenu = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginTop:'20px'}}>
-                <p style={{color:'#424B54',fontFamily:'ProximaNova'}}>
+                <p style={{color:'#424B54',font:'normal normal normal 16px/24px ProximaNova'}}>
                     Your offers are invisible to your customers</p>
                 </Grid.Row>
                 <Grid.Row style={{

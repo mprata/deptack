@@ -22,7 +22,7 @@ import { style } from './style';
 const BankDetailPage = () => {
   const history = useHistory();
   const handleVerify = () => {
-    history.push('/home/enterpin');
+    history.push('/enterpin');
   }
   return (
     <Container>
@@ -36,7 +36,7 @@ const BankDetailPage = () => {
           </Grid.Column>
           <Grid.Column>
             <Image src={payteckLogo} style={style.bankDetailPaytackLogo} />
-            <p style={style.welcome}>Almost done. Validate your bank details</p>
+            <p style={style.allMostDone}>Almost done. Validate your bank details</p>
             <TextField
                     id="standard-basic"
                     label="Business Owner Name"
@@ -53,7 +53,7 @@ const BankDetailPage = () => {
                     style={style.businessAddress}
                   />
                    <div>
-            <Button style={style.signinButton} onClick={handleVerify}>Verify</Button>
+            <Button style={style.verifyButton} onClick={handleVerify}>Verify</Button>
             </div>
           </Grid.Column>
         </Grid.Row>

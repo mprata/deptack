@@ -128,7 +128,7 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                                     keepMounted
                                     open={Boolean(this.state.anchorEl)}
                                     onClose={this.handleClose}
-                                >   
+                                >
                                     <MenuItem onClick={this.handleClose} className='user-menu'>
                                         <div className='user-menu-container'>
                                             <span className='menu-prof menu-img'></span>
@@ -144,9 +144,9 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                                         </div>
                                     </MenuItem>
                                     <MenuItem onClick={this.handleClose} className='user-menu'>
-                                            <span className='menu-problem menu-img'></span>
-                                            <span className='menu-text'>Report a problem</span>
-                                            <span className='menu-arrow'> &gt; </span>
+                                        <span className='menu-problem menu-img'></span>
+                                        <span className='menu-text'>Report a problem</span>
+                                        <span className='menu-arrow'> &gt; </span>
                                     </MenuItem>
                                     <MenuItem onClick={this.handleSignOut}>
                                         <div className='logout-container'>
@@ -158,18 +158,21 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                             </Paper>
                         </div>
                     </AppBar>
-                    <Switch>
-                        <Route exact path='/'>
-                            <Redirect to='/home/dashboard' />
-                        </Route>
-                        <Route path='/home/dashboard' component={Dashboard} />
-                        <Route path='/home/cashback' component={Cashback} />
-                        <Route path='/home/menu' component={MenuComponent} />
-                        <Route path='/home/customers' component={Customers} />
-                        <Route path='/home/promotion' component={Promotion} />
-                        <Route path='/home/cashback-offer' component={CashbackOffer} />
-                        <Route path='/home/menu-additem' component={AddMenuItem} />
-                    </Switch>
+                    <div className='tab-content'>
+                        <Switch>
+                            <Route exact path='/'>
+                                <Redirect to='/home/dashboard' />
+                            </Route>
+                            <Route path='/home/dashboard' component={Dashboard} />
+                            <Route path='/home/cashback' component={Cashback} />
+                            <Route path='/home/menu' component={MenuComponent} />
+                            <Route path='/home/customers' component={Customers} />
+                            <Route path='/home/promotion' component={Promotion} />
+                            <Route path='/home/cashback-offer' component={CashbackOffer} />
+                            <Route path='/home/menu-additem' component={AddMenuItem} />
+                        </Switch>
+                    </div>
+
                     <div className='footer'>
                         <div className='footer-text'>
                             <span className='footer-text1'>© 2020 &nbsp;</span>

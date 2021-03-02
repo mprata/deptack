@@ -63,7 +63,7 @@ const AddMenuItem = () => {
               <div
                 style={{ marginLeft: "30px", float: "left", marginTop: "30px" }}
               >
-                <p style={{ color: "#2BC5B4",fontSize:'28px',marginLeft:'20px' }}>+</p>
+                <p style={{ color: "#2BC5B4",fontSize:'22px',marginLeft:'20px' }}>+</p>
               </div>
             </Grid.Column>
           </Grid.Row>

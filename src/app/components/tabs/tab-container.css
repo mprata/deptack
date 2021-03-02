@@ -18,6 +18,9 @@
 .tab-container {
     background-color: #F0FAF8;
 }
+.tab-content {
+    min-height: 80vh;
+}
 .logo {
     width: 125px;
     height: 40px;
@@ -67,6 +70,8 @@
     justify-content: space-between;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
+    position: relative;
+    bottom: 0;
     margin-top: 33px;
 }
 .footer-text {

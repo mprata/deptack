@@ -42,13 +42,13 @@ const EnterMobileNumberPage = () => {
                         <TextField
                             id="standard-basic"
                             label="Registered Mobile Number"
-                            style={style.businessAddress}
+                            style={style.mobileNumber}
                         />
                         
 
                         <div>
-                            <Button style={style.signinButton} onClick={handleOtp}>Send OTP</Button>
-                           
+                            <Button style={style.sendOtpButton} onClick={handleOtp}>Send OTP</Button>
+                            <Button style={style.cancelButton} onClick={handleOtp}>Cancel</Button>
                         </div>
                     </Grid.Column>
                 </Grid.Row>

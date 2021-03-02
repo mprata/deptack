@@ -36,11 +36,12 @@ export const style: StylesDictionary = {
         marginTop: "150px",
         marginLeft: "30%",
         width: "158px",
-        height: "40px"
+        height: "50px"
     },
     welcome: {
-        marginLeft: "25%",
-        marginTop: "26px"
+        marginLeft: "22%",
+        marginTop: "26px",
+        font:'normal normal normal 16px/24px ProximaNova'
     },
     inputBox: {
         width: "305px",
@@ -57,18 +58,20 @@ export const style: StylesDictionary = {
         borderRadius: "4px",
         opacity: 1,
         color: "white",
-        marginLeft: "40%",
-        width: '140px',
-        fontWeight:'normal',
-        fontSize:'16px',
+        marginLeft: "42%",
+        width: '130px',
+        height:'50px',
+        paddingTop:'12px',
+       font:'normal normal normal 16px/25px Avenir'
     },
     signupButton: {
         background: "white",
         border: "1px solid #2BC5B4",
         borderRadius: "4px",
         opacity: 1,
-        marginLeft: "-10px",
-        fontWeight:'normal',
-        fontSize:'16px',
+        marginLeft: "-30px",
+        height:'50px',
+        paddingTop:'12px',
+        font:'normal normal normal 16px/25px Avenir'
     }
 };

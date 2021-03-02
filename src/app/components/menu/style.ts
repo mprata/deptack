@@ -51,7 +51,7 @@ export const style: StylesDictionary = {
        
     },
     checkBoxStyle: {
-        marginLeft: "-30px",
+        marginLeft: "0px",
         marginTop: "10px",
        fontFamily:"ProximaNova",
         color:'#646D82',
