@@ -52,6 +52,7 @@ code {
 @font-face {
   font-family: 'Lato';
   src: local('Lato'), url('./app/assets/fonts/Lato-Black.woff') format('woff');
+  font-weight: 900;
 }
 
 button {
