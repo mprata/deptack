@@ -8,13 +8,18 @@ import Paper from '@material-ui/core/Paper';
 import Dashboard from '../dashboard/dashboard';
 import { Cashback } from '../cashback/cashback';
 import CashbackOffer from '../cashback/cashback-offer';
-import Menu from '../menu/menu';
+import MenuComponent from '../menu/menu';
 import Customers from '../customers/customers';
 import Promotion from '../promotion/promotion';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import AddMenuItem from '../menu/addMenuItem'
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import { makeStyles } from '@material-ui/core';
+
+
 import './tab-container.css';
 
 export interface TabContainerProps {
@@ -23,6 +28,7 @@ export interface TabContainerProps {
 
 export interface TabContainerState {
     tabSelectedIndex: number;
+    anchorEl: any
 }
 
 class TabContainer extends React.Component<TabContainerProps & RouteComponentProps<{}>, TabContainerState> {
@@ -30,7 +36,8 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
     constructor(props: any) {
         super(props);
         this.state = ({
-            tabSelectedIndex: 0
+            tabSelectedIndex: 0,
+            anchorEl: null
         });
     }
 
@@ -51,6 +58,25 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
             }
         }
     });
+
+    handleClick = (event: any) => {
+        this.setState({
+            anchorEl: event.currentTarget
+        });
+    };
+
+    handleClose = () => {
+        this.setState({
+            anchorEl: null
+        });
+    };
+
+    handleSignOut = () => {
+        this.setState({
+            anchorEl: null
+        });
+        this.props.history.push('/login');
+    };
 
     a11yProps(index: any) {
         return {
@@ -84,18 +110,51 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                             value={currentPath}
                             onChange={this.handleCallToRouter}
                         >
-                            <Tab label="Dashboard" value='/home/dashboard'/>
-                            <Tab label="Cashback" value='/home/cashback'/>
-                            <Tab label="Menu" value='/home/menu'/>
-                            <Tab label="Customers" value='/home/customers'/>
-                            <Tab label="Promotion" value='/home/promotion'/>
+                            <Tab label="Dashboard" value='/home/dashboard' />
+                            <Tab label="Cashback" value='/home/cashback' />
+                            <Tab label="Menu" value='/home/menu' />
+                            <Tab label="Customers" value='/home/customers' />
+                            <Tab label="Promotion" value='/home/promotion' />
                         </Tabs>
                         <div className='header-right'>
                             <Paper variant="outlined" className='notify'>
                                 <NotificationsNoneIcon className='alert' />
                             </Paper>
                             <Paper className='user' elevation={0}>
-                                <AccountCircleIcon className='alert' />
+                                <AccountCircleIcon className='alert' onClick={this.handleClick} />
+                                <Menu
+                                    id="simple-menu"
+                                    anchorEl={this.state.anchorEl}
+                                    keepMounted
+                                    open={Boolean(this.state.anchorEl)}
+                                    onClose={this.handleClose}
+                                >   
+                                    <MenuItem onClick={this.handleClose} className='user-menu'>
+                                        <div className='user-menu-container'>
+                                            <span className='menu-prof menu-img'></span>
+                                            <span className='menu-text'>My Profile</span>
+                                            <span className='menu-arrow'> &gt; </span>
+                                        </div>
+                                    </MenuItem>
+                                    <MenuItem onClick={this.handleClose} className='user-menu'>
+                                        <div className='user-menu-container'>
+                                            <span className='menu-settings menu-img'></span>
+                                            <span className='menu-text'>Settings</span>
+                                            <span className='menu-arrow'> &gt; </span>
+                                        </div>
+                                    </MenuItem>
+                                    <MenuItem onClick={this.handleClose} className='user-menu'>
+                                            <span className='menu-problem menu-img'></span>
+                                            <span className='menu-text'>Report a problem</span>
+                                            <span className='menu-arrow'> &gt; </span>
+                                    </MenuItem>
+                                    <MenuItem onClick={this.handleSignOut}>
+                                        <div className='logout-container'>
+                                            <span className='logout-img'></span>
+                                            <span className='logout-text'>Sign out</span>
+                                        </div>
+                                    </MenuItem>
+                                </Menu>
                             </Paper>
                         </div>
                     </AppBar>
@@ -105,7 +164,7 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                         </Route>
                         <Route path='/home/dashboard' component={Dashboard} />
                         <Route path='/home/cashback' component={Cashback} />
-                        <Route path='/home/menu' component={Menu} />
+                        <Route path='/home/menu' component={MenuComponent} />
                         <Route path='/home/customers' component={Customers} />
                         <Route path='/home/promotion' component={Promotion} />
                         <Route path='/home/cashback-offer' component={CashbackOffer} />

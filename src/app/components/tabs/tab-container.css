@@ -51,6 +51,7 @@
 .alert {
     color: #646D82;
     margin-top: 33px;
+    cursor: pointer;
 }
 .user {
     width: 76px;
@@ -97,4 +98,85 @@
 }
 .footer-right {
     margin-left: 20px;
+}
+.user-menu {
+    width: 228px;
+    height: 57px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    border-bottom: 1px solid #D8EAE6 !important;
+}
+.MuiMenu-paper {
+    width: 228px;
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 10px 20px #C1CFD975 !important;
+    border-radius: 15px !important;
+    opacity: 1;
+}
+.user-menu-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+.menu-prof {
+    width: 16px;
+    height: 16px;
+    background: transparent url('../../assets/profile.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.menu-settings {
+    width: 16px;
+    height: 16px;
+    background: transparent url('../../assets/settings.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.menu-problem {
+    width: 18px;
+    height: 16px;
+    background: transparent url('../../assets/report.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.menu-text {
+    width: 64px;
+    text-align: left;
+    font: normal normal normal 14px/24px ProximaNova;
+    letter-spacing: 0.42px;
+    color: #646D82;
+    opacity: 1;
+    margin-left: 20px;
+}
+.menu-arrow {
+    width: 6px;
+    color: #D2D2DB;
+    opacity: 1;
+    text-align: right;
+    flex-grow: 1;
+}
+.MuiMenu-paper {
+    top: 88px !important;
+}
+.logout-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 57px;
+}
+.logout-img {
+    width: 16px;
+    height: 16px;
+    background: transparent url('../../assets/logout.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.logout-text {
+    text-align: left;
+    font: normal normal 600 13px/24px ProximaNova;
+    letter-spacing: 1.3px;
+    color: #2BC5B4;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-left: 5px;
 }

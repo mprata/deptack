@@ -33,7 +33,7 @@ const columns: ColDef[] = [
         headerName: 'ITEMS',
         width: 300,
         headerClassName: 'grid-header',
-        cellClassName: 'grid-cell'
+        cellClassName: 'grid-items'
     },
     {
         field: 'comments',
