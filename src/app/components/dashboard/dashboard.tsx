@@ -32,6 +32,7 @@ const columns: ColDef[] = [
         field: 'items',
         headerName: 'ITEMS',
         width: 300,
+        flex:1,
         headerClassName: 'grid-header',
         cellClassName: 'grid-items'
     },
@@ -39,6 +40,7 @@ const columns: ColDef[] = [
         field: 'comments',
         headerName: 'COMMENTS',
         width: 300,
+        flex:1,
         headerClassName: 'grid-header',
         cellClassName: 'grid-cell'
     },
