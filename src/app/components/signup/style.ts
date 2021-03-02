@@ -176,7 +176,6 @@ export const style: StylesDictionary = {
         color: 'white',
         top: '12%',
         left: '8%',
-        font:'normal normal 1000 35px Avenir',
         width: '80%',
         fontWeight: 'bold'
     },

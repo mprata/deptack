@@ -7,6 +7,8 @@ import TextField from "@material-ui/core/TextField";
 import { style } from './style';
 import PropTypes from 'prop-types';
 
+import './login.css';
+
 interface LoginProps {
   setToken: any
 }
@@ -26,7 +28,7 @@ const Login = (props: React.PropsWithChildren<LoginProps>) => {
           <Grid.Column >
             <div style={style.rightDiv}>
               <Image src={loginpage} style={style.img} />
-              <p style={style.text}>The all-in-one smart solution to loyalty</p>
+              <p style={style.text} className='img-text'>The all-in-one smart solution to loyalty</p>
             </div>
           </Grid.Column>
           <Grid.Column >

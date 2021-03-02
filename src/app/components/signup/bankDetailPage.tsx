@@ -31,7 +31,7 @@ const BankDetailPage = () => {
           <Grid.Column>
               <div style={style.rightDiv}>
             <Image src={bankDetailPageImg} fluid></Image>
-            <p style={style.text}>The loyalty solution that embraces your customers</p>
+            <p style={style.text} className='img-text'>The loyalty solution that embraces your customers</p>
             </div>
           </Grid.Column>
           <Grid.Column>

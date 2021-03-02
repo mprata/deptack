@@ -31,7 +31,7 @@ const Signup = () => {
           <Grid.Column>
               <div style={style.rightDiv}>
             <Image src={signupImg} fluid></Image>
-            <p style={style.text}>Surprise your customers with personalised rewards</p>
+            <p style={style.text} className='img-text'>Surprise your customers with personalised rewards</p>
             </div>
           </Grid.Column>
           <Grid.Column>

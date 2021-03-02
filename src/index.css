@@ -38,6 +38,12 @@ code {
   font-weight: 600;
 }
 
+@font-face {
+  font-family: 'Avenir';
+  src: local('Avenir'), url('./app/assets/fonts/Avenir-Heavy.woff') format('woff');
+  font-weight: 900;
+}
+
 button {
   outline: none;
   cursor: pointer;
