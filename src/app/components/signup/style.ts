@@ -176,7 +176,7 @@ export const style: StylesDictionary = {
         color: 'white',
         top: '12%',
         left: '8%',
-        width: '80%',
+        width: '72%',
         fontWeight: 'bold'
     },
     rightDiv: {

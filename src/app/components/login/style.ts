@@ -28,6 +28,7 @@ export const style: StylesDictionary = {
         color: 'white',
         top: '12%',
         left: '8%',
+        width: '80%'
     },
     payteckLogoPng: {
         marginTop: "150px",

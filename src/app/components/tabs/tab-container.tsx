@@ -123,7 +123,7 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                             <Paper className='user' elevation={0}>
                                 <AccountCircleIcon className='alert' onClick={this.handleClick} />
                                 <Menu
-                                    id="simple-menu"
+                                    id="user-menu"
                                     anchorEl={this.state.anchorEl}
                                     keepMounted
                                     open={Boolean(this.state.anchorEl)}

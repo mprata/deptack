@@ -112,7 +112,7 @@
     opacity: 1;
     border-bottom: 1px solid #D8EAE6 !important;
 }
-.MuiMenu-paper {
+#user-menu .MuiMenu-paper {
     width: 228px;
     background: #FFFFFF 0% 0% no-repeat padding-box !important;
     box-shadow: 0px 10px 20px #C1CFD975 !important;
@@ -160,7 +160,7 @@
     text-align: right;
     flex-grow: 1;
 }
-.MuiMenu-paper {
+#user-menu .MuiMenu-paper {
     top: 88px !important;
 }
 .logout-container {
