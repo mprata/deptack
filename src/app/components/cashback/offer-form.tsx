@@ -129,7 +129,7 @@ export const OfferForm = (props: any) => {
                                 multiple={true}
                                 onChange={_onChange}
                                 className='img-ctrl' />
-                            <div className='img-text'>Upload background image</div>
+                            <div className='cashback-img-text'>Upload background image</div>
                         </div>
                         <div className='img-preview' >
                             <img className='img-upload' src={imgSrc} />
