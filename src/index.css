@@ -44,6 +44,16 @@ code {
   font-weight: 900;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('./app/assets/fonts/Roboto-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url('./app/assets/fonts/Lato-Black.woff') format('woff');
+}
+
 button {
   outline: none;
   cursor: pointer;

@@ -169,13 +169,65 @@
     align-items: flex-end;
     box-sizing: border-box;
 }
-.bg-campaign {
-    height: 174px;
-    background: transparent linear-gradient(270deg, #FFFFFF00 0%, #0000006B 27%, #000000 100%) 0% 0% no-repeat padding-box;
+.bg-campaign-container {
+    display: flex;
+    flex-direction: column;
     border-radius: 16px 16px 16px 16px;
     opacity: 1;
     box-sizing: border-box;
     width: 72%;
+    height: 174px;
+    border: 1px solid #E6E6E6;
+}
+.bg-campaign {
+    border-radius: 16px 16px 0px 0px;
+    display:flex;
+    width: 100%;
+    position: relative;
+    height: 120px;
+    background: transparent linear-gradient(270deg, #FFFFFF00 0%, #0000006B 27%, #000000 100%) 0% 0% no-repeat padding-box;
+}
+.exclusive-text {
+    position: absolute;
+    top: 33px;
+    left: 24px;
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.85;
+}
+.exclusive-offer-text {
+    position: absolute;
+    top: 50px;
+    left: 26px;
+    text-align: left;
+    width: 88px;
+    font: normal normal 900 20px/26px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.bg-icon-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 54px;
+    padding: 10px;
+}
+.bg-icon {
+    width: 31px;
+    height: 31px;
+}
+.bg-user-name {
+    margin-left: 10px;
+    text-align: center;
+    font: normal normal bold 14px/24px ProximaNova;
+    letter-spacing: 0px;
+    color: #646D82;
+    opacity: 1;
 }
 .campaign-edit {
     width: 36px;

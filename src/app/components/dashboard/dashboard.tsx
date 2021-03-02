@@ -32,7 +32,7 @@ const columns: ColDef[] = [
         field: 'items',
         headerName: 'ITEMS',
         width: 300,
-        flex:1,
+        flex: 1,
         headerClassName: 'grid-header',
         cellClassName: 'grid-items'
     },
@@ -40,7 +40,7 @@ const columns: ColDef[] = [
         field: 'comments',
         headerName: 'COMMENTS',
         width: 300,
-        flex:1,
+        flex: 1,
         headerClassName: 'grid-header',
         cellClassName: 'grid-cell'
     },
@@ -87,7 +87,7 @@ export default class Dashboard extends React.Component {
                                         width={443}
                                         stroke={'#F7617D'}
                                         fill={'#FDCBD4'}
-                                        strokDash={'5 5'}
+                                        strokDash={'3 3'}
                                         inverted={false}
                                     >
                                     </AreaChartWrapper>
@@ -135,7 +135,7 @@ export default class Dashboard extends React.Component {
                                         width={443}
                                         stroke={'#FECD54'}
                                         fill={'#F79256'}
-                                        strokDash={'5 5'}
+                                        strokDash={'3 3'}
                                         inverted={false}
                                     >
                                     </AreaChartWrapper>
@@ -202,8 +202,15 @@ export default class Dashboard extends React.Component {
                                 <span className='campaign-header'>ongoing campaigns</span>
                             </div>
                             <div className='campaign-bg-container'>
-                                <div className='bg-campaign'>
-
+                                <div className='bg-campaign-container'>
+                                    <div className='bg-campaign'>
+                                        <span className='exclusive-text'>#paytackexclusive</span>
+                                        <span className='exclusive-offer-text'>Upto 5% Cashback</span>
+                                    </div>
+                                    <div className='bg-icon-container'>
+                                        <AccountCircleIcon className='bg-icon'/>
+                                        <span className='bg-user-name'>Burger King</span>
+                                    </div>
                                 </div>
                                 <div className='campaign-buttons'>
                                     <span className='campaign-edit'></span>
@@ -223,8 +230,15 @@ export default class Dashboard extends React.Component {
                                 </div>
                             </div>
                             <div className='campaign-bg-container' style={{ marginTop: '40px' }}>
-                                <div className='bg-campaign'>
-
+                                <div className='bg-campaign-container'>
+                                    <div className='bg-campaign'>
+                                        <span className='exclusive-text'>#paytackexclusive</span>
+                                        <span className='exclusive-offer-text'>Upto 5% Cashback</span>
+                                    </div>
+                                    <div className='bg-icon-container'>
+                                        <AccountCircleIcon className='bg-icon'/>
+                                        <span className='bg-user-name'>Burger King</span>
+                                    </div>
                                 </div>
                                 <div className='campaign-buttons'>
                                     <span className='campaign-edit'></span>

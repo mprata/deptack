@@ -32,15 +32,15 @@ const data = [
   },
   {
     name: 'Page G',
-    value: 10,
+    value: 18,
   },
   {
     name: 'Page G',
-    value: 30,
+    value: 23,
   },
   {
     name: 'Page G',
-    value: 10,
+    value: 15,
   },
   {
     name: 'Page G',
@@ -80,14 +80,14 @@ export default class AreaChartWrapper extends React.Component<areaProps> {
           <defs>
             {!this.props.inverted && (
               <linearGradient id={this.props.type} x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor={this.props.fill} stopOpacity={0.3} />
+                <stop offset="15%" stopColor={this.props.stroke} stopOpacity={0.3} />
                 <stop offset="95%" stopColor={this.props.fill} stopOpacity={0} />
               </linearGradient>
             )}
             {this.props.inverted && (
               <linearGradient id={this.props.type} x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor={this.props.fill} stopOpacity={0} />
-                <stop offset="95%" stopColor={this.props.fill} stopOpacity={0.3} />
+                <stop offset="15%" stopColor={this.props.fill} stopOpacity={0} />
+                <stop offset="95%" stopColor={this.props.stroke} stopOpacity={0.3} />
               </linearGradient>
             )}
           </defs>
