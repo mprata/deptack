@@ -13,7 +13,7 @@ import {
 const CreateMenu = () => {
     const history = useHistory();
     const handleCreate = () => {
-        history.push('/menu-additem');
+        history.push('/home/menu-additem');
     }
     return (
         <Grid style={style.createMenuDiv}>
@@ -28,7 +28,9 @@ const CreateMenu = () => {
                     </Grid.Column>
                     <Grid.Column  >
                         <div style={{ float: 'left', marginTop: "35px" }}>
-                            <p >Burger King<br />Sweden</p>
+                            <p style={{font:'normal normal bold 16px/19px ProximaNova'}}>Burger King</p>
+                            <p style={{font:' normal normal normal 13px/15px ProximaNova',
+                            marginTop:'-10px',color: '#CFCFCF',marginRight:'30px'}}>Sweden</p>
 
                         </div>
 
@@ -46,7 +48,8 @@ const CreateMenu = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginTop:'20px'}}>
-                <p>Your offers are invisible to your customers</p>
+                <p style={{color:'#424B54',fontFamily:'ProximaNova'}}>
+                    Your offers are invisible to your customers</p>
                 </Grid.Row>
                 <Grid.Row style={{
                     display: 'flex',

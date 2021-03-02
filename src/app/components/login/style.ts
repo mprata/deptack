@@ -36,7 +36,7 @@ export const style: StylesDictionary = {
         marginTop: "150px",
         marginLeft: "30%",
         width: "158px",
-        height: "50px"
+        height: "40px"
     },
     welcome: {
         marginLeft: "25%",
@@ -58,13 +58,17 @@ export const style: StylesDictionary = {
         opacity: 1,
         color: "white",
         marginLeft: "40%",
-        width: '140px'
+        width: '140px',
+        fontWeight:'normal',
+        fontSize:'16px',
     },
     signupButton: {
         background: "white",
         border: "1px solid #2BC5B4",
         borderRadius: "4px",
         opacity: 1,
-        marginLeft: "-10px"
+        marginLeft: "-10px",
+        fontWeight:'normal',
+        fontSize:'16px',
     }
 };

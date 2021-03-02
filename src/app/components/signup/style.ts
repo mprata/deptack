@@ -20,7 +20,7 @@ export const style: StylesDictionary = {
         marginTop: "40px",
         marginLeft: "200px",
         width: "100px",
-        height: "40px"
+        height: "35px"
     },
     bankDetailPaytackLogo:{
         marginTop: "150px",
@@ -30,7 +30,9 @@ export const style: StylesDictionary = {
     },
     welcome: {
         marginLeft: "150px",
-        marginTop: "24px"
+        marginTop: "24px",
+        font:"normal normal normal 13px ProximaNova",
+        color:'#424B54'
     },
     forgotPin: {
         marginLeft: "70px",
@@ -48,13 +50,16 @@ export const style: StylesDictionary = {
         background: "#2BC5B4 0% 0% no-repeat padding-box",
         border: "1px solid #DDDDDD",
         borderRadius: "4px",
+       fontWeight:'normal',
+       fontSize:'18px',
         opacity: 1,
         color: "white",
         width: '185px',
         height: '50px',
         marginLeft: "180px",
         textAlign: 'center',
-        marginTop: '20px'
+        marginTop: '20px',
+        letterSpacing: '1px'
     },
     cancelButton: {
         background: "white",
@@ -105,7 +110,7 @@ export const style: StylesDictionary = {
         textAlign: 'center',
         font: "normal normal normal 15px/24px ProximaNova",
         letterSpacing: "0px",
-        color: "black",
+        
         marginTop: '20px'
     },
     text: {
@@ -114,7 +119,7 @@ export const style: StylesDictionary = {
         color: 'white',
         top: '12%',
         left: '8%',
-        fontSize: '35px',
+        font:'normal normal 1000 35px Avenir',
         width: '80%',
         fontWeight: 'bold'
     },

@@ -162,10 +162,13 @@ export const OfferForm = (props: any) => {
                     <div className='button-container'>
                         <div className='button-text'>Menu items included:</div>
                         <div className='button-inner'>
-                            <div className='button-text half-field'>25</div>
-                            <Button variant="contained" className='half-field exclude-button'>
-                                Exclude items
+                            <div className='button-text button-text1 half-field'>25</div>
+                            <div className='half-field'>
+                                <Button variant="contained" className='exclude-button'>
+                                    Exclude Items
                             </Button>
+                            </div>
+
                         </div>
                     </div>
 

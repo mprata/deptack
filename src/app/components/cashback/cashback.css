@@ -17,7 +17,7 @@
 }
 
 .offer-container {
-    margin-top: 72px;
+    margin-top: 15px;
     width: 492px;
     height: 441px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -36,7 +36,7 @@
 
 .offer-text {
     margin-top: 10%;
-    width: auto;
+    width: 228px;
     height: 20px;
     text-align: center;
     font: normal normal normal 16px/24px ProximaNova;
@@ -211,11 +211,10 @@ img[src=""] {
 }
 .deals-label {
     text-align: left;
-    font: normal normal 600 15px/24px ProximaNova;
-    letter-spacing: 0px;
+    font: normal normal 600 15px/24px ProximaNova !important;
+    letter-spacing: 0px !important;
     color: #424B54 !important;
     opacity: 1;
-    font-weight: bold !important;
 }
 .button-container {
     display: flex;
@@ -239,19 +238,30 @@ img[src=""] {
     letter-spacing: 0px;
     color: #424B54;
     opacity: 1;
-    font-weight: bold;
+}
+.button-text1 {
+    font: normal normal normal 15px/24px ProximaNova;
+    letter-spacing: 0px;
+    color: #424B54;
+    opacity: 1;
 }
 .exclude-button {
     background: #22CE8B00 0% 0% no-repeat padding-box !important;
     border: 1px solid #2BC5B4 !important;
     border-radius: 22px !important;
     opacity: 1;
-    width: 50%;
+    width: 114px;
+    height: 25px;
     text-align: center;
-    font: normal normal normal 12px/13px ProximaNova;
-    letter-spacing: 0.6px;
-    color: #646D82;
+    font: normal normal normal 12px/13px ProximaNova !important;
+    letter-spacing: 0.6px !important;
+    color: #646D82 !important;
     opacity: 1;
+    box-shadow: none !important;
+    padding: 0px !important;
+}
+.MuiButton-root {
+    text-transform: initial !important;
 }
 .publish-button {
     width: 185px;
@@ -266,4 +276,11 @@ img[src=""] {
     opacity: 1;
     border: none;
     cursor: pointer;
+}
+.MuiFormControlLabel-label {
+    text-align: left;
+    font: normal normal normal 15px/24px ProximaNova !important;
+    letter-spacing: 0px !important;
+    color: #424B54 !important;
+    opacity: 1;
 }

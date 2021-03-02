@@ -73,7 +73,7 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
         let currentPath = this.props.history.location.pathname.split('-')[0];
         return (
             <ThemeProvider theme={this.theme}>
-                <div>
+                <div className='tab-container'>
                     <AppBar position="static" className='app-bar'>
                         <div className='logo'></div>
                         <Tabs
@@ -84,11 +84,11 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                             value={currentPath}
                             onChange={this.handleCallToRouter}
                         >
-                            <Tab label="Dashboard" value='/dashboard'/>
-                            <Tab label="Cashback" value='/cashback'/>
-                            <Tab label="Menu" value='/menu'/>
-                            <Tab label="Customers" value='/customers'/>
-                            <Tab label="Promotion" value='/promotion'/>
+                            <Tab label="Dashboard" value='/home/dashboard'/>
+                            <Tab label="Cashback" value='/home/cashback'/>
+                            <Tab label="Menu" value='/home/menu'/>
+                            <Tab label="Customers" value='/home/customers'/>
+                            <Tab label="Promotion" value='/home/promotion'/>
                         </Tabs>
                         <div className='header-right'>
                             <Paper variant="outlined" className='notify'>
@@ -101,16 +101,31 @@ class TabContainer extends React.Component<TabContainerProps & RouteComponentPro
                     </AppBar>
                     <Switch>
                         <Route exact path='/'>
-                            <Redirect to='/dashboard' />
+                            <Redirect to='/home/dashboard' />
                         </Route>
-                        <Route path='/dashboard' component={Dashboard} />
-                        <Route path='/cashback' component={Cashback} />
-                        <Route path='/menu' component={Menu} />
-                        <Route path='/customers' component={Customers} />
-                        <Route path='/promotion' component={Promotion} />
-                        <Route path='/cashback-offer' component={CashbackOffer} />
-                        <Route path='/menu-additem' component={AddMenuItem} />
+                        <Route path='/home/dashboard' component={Dashboard} />
+                        <Route path='/home/cashback' component={Cashback} />
+                        <Route path='/home/menu' component={Menu} />
+                        <Route path='/home/customers' component={Customers} />
+                        <Route path='/home/promotion' component={Promotion} />
+                        <Route path='/home/cashback-offer' component={CashbackOffer} />
+                        <Route path='/home/menu-additem' component={AddMenuItem} />
                     </Switch>
+                    <div className='footer'>
+                        <div className='footer-text'>
+                            <span className='footer-text1'>© 2020 &nbsp;</span>
+                            <span className='footer-text2'>Paytack.&nbsp;</span>
+                            <span className='footer-text1'>All Rights Reserved</span>
+                        </div>
+                        <div className='footer-text-right'>
+                            <span className='footer-right'>TERMS OF USE</span>
+                            <span className='footer-right'>PRIVACY POLICY</span>
+                            <span className='footer-right'>REPORT</span>
+                            <span className='footer-right'>ABOUT</span>
+                            <span className='footer-right'>BLOG</span>
+                            <span className='footer-right'>CONTACT</span>
+                        </div>
+                    </div>
                 </div>
             </ThemeProvider>
         )

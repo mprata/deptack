@@ -6,7 +6,7 @@ import './cashback.css';
 export const Cashback = () => {
     const history = useHistory();
     const handleCreate = () => {
-        history.push('/cashback-offer');
+        history.push('/home/cashback-offer');
     }
     return (
         <Grid

@@ -13,7 +13,7 @@ interface LoginProps {
 
 const Login = (props: React.PropsWithChildren<LoginProps>) => {
   const handleSubmit = () => {
-    props.setToken({token: true});
+    history.push('/home/dashboard');
   }
   const history = useHistory();
   const handleSignup = () => {

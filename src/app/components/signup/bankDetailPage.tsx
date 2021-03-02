@@ -22,7 +22,7 @@ import { style } from './style';
 const BankDetailPage = () => {
   const history = useHistory();
   const handleVerify = () => {
-    history.push('/enterpin');
+    history.push('/home/enterpin');
   }
   return (
     <Container>

@@ -17,6 +17,8 @@ const AddMenuItem = () => {
                 marginLeft: "30px",
                 marginTop: "20px",
                 marginBottom: "0px",
+                fontSize:"normal normal bold 20px/24px Proxima Nova",
+                color: '#646D82'
               }}
             >
               Enter Category Name
@@ -61,7 +63,7 @@ const AddMenuItem = () => {
               <div
                 style={{ marginLeft: "30px", float: "left", marginTop: "30px" }}
               >
-                <p style={{ color: "#2BC5B4" }}>+</p>
+                <p style={{ color: "#2BC5B4",fontSize:'28px',marginLeft:'20px' }}>+</p>
               </div>
             </Grid.Column>
           </Grid.Row>

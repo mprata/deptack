@@ -4,46 +4,52 @@ import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'rec
 const data = [
   {
     name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    value: 5,
   },
   {
     name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    value: 3,
   },
   {
     name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    value: 10,
   },
   {
     name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    value: 5,
   },
   {
     name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    value: 15,
   },
   {
     name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    value: 10,
   },
   {
     name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    value: 20,
   },
+  {
+    name: 'Page G',
+    value: 10,
+  },
+  {
+    name: 'Page G',
+    value: 30,
+  },
+  {
+    name: 'Page G',
+    value: 10,
+  },
+  {
+    name: 'Page G',
+    value: 12,
+  },
+  {
+    name: 'Page G',
+    value: 5,
+  }
 ];
 
 export interface areaProps {
@@ -63,7 +69,6 @@ export default class AreaChartWrapper extends React.Component<areaProps> {
     return (
       <ResponsiveContainer>
         <AreaChart
-          height={this.props.height}
           data={data}
           margin={{
             top: 10,
@@ -90,7 +95,7 @@ export default class AreaChartWrapper extends React.Component<areaProps> {
           {this.props.inverted && <YAxis reversed hide />}
           <Area
             type="monotone"
-            dataKey="uv"
+            dataKey="value"
             stroke={this.props.stroke}
             strokeDasharray={this.props.strokDash}
             fillOpacity={1}
