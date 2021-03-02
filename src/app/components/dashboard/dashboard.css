@@ -209,7 +209,7 @@
     width: 85%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 }
 .cam-text1 {
     text-align: left;
@@ -322,6 +322,10 @@ hr {
     letter-spacing: 1.3px;
     color: #CBD1D9;
     opacity: 1;
+    align-items: center;
+}
+.MuiDataGrid-root .MuiDataGrid-columnsContainer {
+    justify-content: center;
 }
 .MuiDataGrid-columnSeparator {
     display: none !important;
